@@ -13,5 +13,6 @@ public class Main {
         System.out.println();
         CodeChallenge2 codeChallenge2 = new CodeChallenge2();
         System.out.println(codeChallenge2.compute(33357));
+        System.out.println();
     }
 }
