@@ -2,6 +2,20 @@ package com.company.codeChallenges;
 
 public class CodeChallenge2 {
 
+    private static String contains(int number) {
+        if (number == 0)
+            return "";
+        int x = number % 10;
+        if (x == 3)
+            return contains(number / 10) + "Foo";
+        if (x == 5)
+            return contains(number / 10) + "Bar";
+        if (x == 7)
+            return contains(number / 10) + "Qix";
+        return "";
+
+    }
+
     private static final String FOO = "Foo";
     private static final String BAR = "Bar";
     private static final String QIX = "Qix";
