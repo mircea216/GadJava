@@ -1,4 +1,4 @@
-package com.company.codeChallenges;
+package com.company.basics;
 
 public class CodeChallenge2 {
 
@@ -19,9 +19,9 @@ public class CodeChallenge2 {
     private static final String FOO = "Foo";
     private static final String BAR = "Bar";
     private static final String QIX = "Qix";
-    public static final String THREE = "3";
-    public static final String FIVE = "5";
-    public static final String SEVEN = "7";
+    private static final String THREE = "3";
+    private static final String FIVE = "5";
+    private static final String SEVEN = "7";
 
     public int numberOfACertainDigit(int number, int digit) {
         int counter = 0;

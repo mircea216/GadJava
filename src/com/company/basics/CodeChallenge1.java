@@ -1,4 +1,4 @@
-package com.company.codeChallenges;
+package com.company.basics;
 
 public class CodeChallenge1 {
     public void printNumbers() {

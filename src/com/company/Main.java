@@ -1,7 +1,7 @@
 package com.company;
 
-import com.company.codeChallenges.CodeChallenge1;
-import com.company.codeChallenges.CodeChallenge2;
+import com.company.basics.CodeChallenge1;
+import com.company.basics.CodeChallenge2;
 import com.company.lab2.BoxingMatch;
 import com.company.lab2.Fighter;
 
