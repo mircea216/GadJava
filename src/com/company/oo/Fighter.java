@@ -1,4 +1,4 @@
-package com.company.lab2;
+package com.company.oo;
 
 public class Fighter {
     private String name;

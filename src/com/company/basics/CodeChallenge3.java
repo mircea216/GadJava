@@ -9,7 +9,7 @@ public class CodeChallenge3 {
             for (int j = i + 1; j < numbers.length; j++)
                 if (numbers[i] + numbers[j] == 0 && !paired && !pairedPositions.toString().
                         contains(String.valueOf(i))) {
-                    pairedPositions.append(j);
+                    pairedPositions.append(j).append(" ");
                     paired = true;
                     pairs++;
                 }

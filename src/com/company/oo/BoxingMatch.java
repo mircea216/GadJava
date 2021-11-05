@@ -1,4 +1,4 @@
-package com.company.lab2;
+package com.company.oo;
 
 public class BoxingMatch {
     private Fighter f1;
@@ -12,10 +12,11 @@ public class BoxingMatch {
     public String fight() {
         while (f1.getHealth() > 0 && f2.getHealth() > 0) {
             f1.attack(f2);
-            if (f2.getHealth() > 0)
+            if (f2.getHealth() > 0) {
                 f2.attack(f1);
-            if (f1.getHealth() <= 0)
-                return f2.getName();
+                if (f1.getHealth() <= 0)
+                    return f2.getName();
+            }
             return f1.getName();
         }
         return "No winner";
