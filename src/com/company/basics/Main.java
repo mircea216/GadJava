@@ -8,7 +8,7 @@ public class Main {
         System.out.println(codeChallenge2.compute(33357));
         System.out.println(codeChallenge2.compute(53));
         System.out.println(codeChallenge2.compute2(105));
-        System.out.println(codeChallenge2.compute2(101));
+        System.out.println(codeChallenge2.compute2(10101));
         System.out.println(codeChallenge2.compute2(303));
         CodeChallenge3 codeChallenge3 = new CodeChallenge3();
         int[] numbers = {3, 2, -3, -2, 3, 0};
