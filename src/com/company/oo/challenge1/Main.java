@@ -1,4 +1,4 @@
-package com.company.oo;
+package com.company.oo.challenge1;
 
 public class Main {
     public static void main(String[] args) {

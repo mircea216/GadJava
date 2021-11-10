@@ -1,6 +1,7 @@
-package com.company.oo;
+package com.company.oo.challenge1;
 
 public class Fighter {
+
     private String name;
     private int health;
     private int damagePerAttack;

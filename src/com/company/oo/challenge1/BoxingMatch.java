@@ -1,4 +1,4 @@
-package com.company.oo;
+package com.company.oo.challenge1;
 
 public class BoxingMatch {
     private Fighter f1;
