@@ -1,4 +1,4 @@
-package com.company.designPrinciples.builder;
+package com.company.designPatterns.builder;
 
 public class Computer {
     private boolean bluetooth;
