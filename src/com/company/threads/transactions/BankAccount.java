@@ -1,22 +1,25 @@
 package com.company.threads.transactions;
 
 public class BankAccount {
-    private final String name;
-    private final int debit;
+    private String name;
+    private int debit;
 
     public BankAccount(String name, int debit) {
         this.name = name;
         this.debit = debit;
     }
 
-    public void withdraw(double amount) {
+    synchronized void withdraw(double amount) throws InsufficientlyMoneyException {
+        if (amount > debit) {
+            throw new InsufficientlyMoneyException("Not enough money");
+        }
         longDatabaseCall();
-        System.out.println("You extracted " + amount + " money");
+        this.debit -= amount;
     }
 
-    public void deposit(double amount) {
+    synchronized void deposit(double amount) {
         longDatabaseCall();
-        System.out.println("You deposited " + amount + " money");
+        this.debit += amount;
     }
 
     void longDatabaseCall() {
@@ -25,5 +28,13 @@ public class BankAccount {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+    }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "name='" + name + '\'' +
+                ", debit=" + debit +
+                '}';
     }
 }

@@ -18,6 +18,16 @@ public class Main {
         }
         Player player2 = new Player();
         player2.start();
+        try {
+            player1.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        try {
+            player2.join();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         if (Objects.equals(player1.getMove(), player2.getMove())) {
             System.out.println("Retry no winner!");
         } else if ((player1.getMove().equals(SCISSORS) && player2.getMove().equals(PAPER)) ||
