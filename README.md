@@ -9,4 +9,4 @@ Project requirements
     Each cake has a predefined topping, a baking time and a specific price, but they are quite similar.
     At times, it can be difficult for the to find out the cakes that have been ordered in a day.
 
-SOLUTION: Prototype Design Pattern
+   SOLUTION: Prototype Design Pattern
